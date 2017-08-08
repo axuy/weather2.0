@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Weather Data</title>
+     <link rel="stylesheet" type="text/css" href="/static/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div class="pagetitle">
+        <h1>Weather Data</h1>
+      </div>
+      <div id="main">
+        {% for data in weatherData %}
+          <div class="row"> {{data[0]}} </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
